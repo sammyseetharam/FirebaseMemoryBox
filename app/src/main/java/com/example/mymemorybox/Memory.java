@@ -63,7 +63,19 @@ public class Memory implements Parcelable{
         this.imageResourceId = imageResourceId;
     }
 
-    protected Memory(Parcel in) {
+    public Memory(Parcel parcel) {
+        rating = parcel.readInt();
+        name = parcel.readString();
+        desc = parcel.readString();
+        imageResourceId = parcel.readInt();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(rating);
+        dest.writeString(name);
+        dest.writeString(desc);
+        dest.writeInt(imageResourceId);
     }
 
     public static final Creator<Memory> CREATOR = new Creator<Memory>() {
@@ -83,7 +95,4 @@ public class Memory implements Parcelable{
         return 0;
     }
 
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-    }
 }
