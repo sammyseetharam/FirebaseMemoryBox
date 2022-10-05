@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/priorityChosen"
+    style="?attr/spinnerDropDownItemStyle"
+    android:layout_width="@dimen/memEditTextWidth"
+    android:layout_height="@dimen/spinnerHeight"
+    android:layout_marginTop="@dimen/margin"
+    android:background="@color/secondaryDarkColor"
+    android:padding="@dimen/padding"
+    android:text="My Choice"
+    android:textColor="#536DFE"
+    android:textSize="@dimen/fontRegular" />
