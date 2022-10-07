@@ -4,9 +4,9 @@
     style="?attr/spinnerDropDownItemStyle"
     android:layout_width="@dimen/memEditTextWidth"
     android:layout_height="@dimen/spinnerHeight"
-    android:layout_marginTop="@dimen/margin"
-    android:background="@color/secondaryDarkColor"
-    android:padding="@dimen/padding"
     android:text="My Choice"
-    android:textColor="#536DFE"
-    android:textSize="@dimen/fontRegular" />
+    android:padding="@dimen/padding"
+    android:background="@color/secondaryDarkColor"
+    android:textColor="@color/primaryTextColor"
+    android:textSize="@dimen/fontRegular"
+    android:layout_marginTop="@dimen/margin" />

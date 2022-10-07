@@ -53,6 +53,7 @@
         android:layout_width="122dp"
         android:layout_height="48dp"
         android:layout_marginStart="56dp"
+        android:onClick="logInClicked"
         android:text="Log in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,10 +63,13 @@
         android:id="@+id/signUpButton"
         android:layout_width="122dp"
         android:layout_height="48dp"
+        android:layout_marginStart="177dp"
         android:layout_marginEnd="56dp"
+        android:onClick="signUpClicked"
         android:text="Sign up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/logInButton"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
