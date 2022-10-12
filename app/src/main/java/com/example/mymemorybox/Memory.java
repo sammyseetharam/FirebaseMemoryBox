@@ -86,7 +86,7 @@ public class Memory implements Parcelable{
 
         @Override
         public Memory[] newArray(int size) {
-            return new Memory[size];
+            return new Memory[0];
         }
     };
 
