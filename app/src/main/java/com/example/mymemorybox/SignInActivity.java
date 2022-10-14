@@ -40,6 +40,25 @@ public class SignInActivity extends AppCompatActivity  {
         passwordET = findViewById(R.id.passwordEditText);
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        updateUI();
+    }
+
+
+    public void updateUI() {
+        // if the user is already logged in, then they bypass this screen
+        Log.d(TAG, "inside updateUI: " + firebaseHelper.getmAuth().getUid());
+        if (firebaseHelper.getmAuth().getUid() != null) {
+            firebaseHelper.attachReadDataToUser();
+            Intent intent = new Intent(SignInActivity.this, SelectActionActivity.class);
+            startActivity(intent);
+        }
+    }
+
+
     /**
      * Method first checks if the input is valid.  If it meets the screening criteria from
      * getValues(), then the username (which is an email) and password are sent to the FirebaseHelper
