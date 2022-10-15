@@ -93,7 +93,7 @@ public class FirebaseHelper {
         Map<String, Object> user = new HashMap<>();
         user.put("name", name);
         // Add a new document with a docID = to the authenticated user's UID
-        db.collection("users").document(newUID)//gets uid for the user
+        db.collection("users").document(newUID)
                 .set(user)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -178,6 +178,7 @@ certain things from occurring until after the onSuccess is finished.
                     }
                 });
     }
+
 
 
     //https://stackoverflow.com/questions/48499310/how-to-return-a-documentsnapshot-as-a-result-of-a-method/48500679#48500679
