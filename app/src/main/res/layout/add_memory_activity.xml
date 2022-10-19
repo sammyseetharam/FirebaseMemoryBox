@@ -9,62 +9,62 @@
         android:id="@+id/spinnerListObject"
         android:layout_width="280dp"
         android:layout_height="54dp"
+        android:background="@color/secondaryColor"
         android:contentDescription="@string/title"
         android:entries="@array/spinnerList"
-        android:background="@color/secondaryColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.205" />
+        app:layout_constraintTop_toBottomOf="@+id/addMemoryName"
+        app:layout_constraintVertical_bias="0.048" />
 
     <EditText
         android:id="@+id/memoryName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@color/secondaryColor"
         android:ems="10"
+        android:hint="Name of Memory"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:hint="Name of Memory"
-        android:background="@color/secondaryColor"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.308" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerListObject"
+        app:layout_constraintVertical_bias="0.037" />
 
     <EditText
         android:id="@+id/descriptionEditText"
-        android:layout_width="295dp"
-        android:layout_height="401dp"
+        android:layout_width="280dp"
+        android:layout_height="322dp"
+        android:background="@color/secondaryColor"
         android:ems="10"
-        android:inputType="textPersonName"
         android:gravity="top"
         android:hint="Description"
-        android:background="@color/secondaryColor"
+        android:inputType="textPersonName"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.726" />
+        app:layout_constraintVertical_bias="0.664" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="164dp"
         android:layout_height="50dp"
-        android:text="Add Memory"
         android:onClick="addMemoryButtonClicked"
+        android:text="Add Memory"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.943" />
+        app:layout_constraintVertical_bias="0.92" />
 
     <TextView
         android:id="@+id/addMemoryName"
@@ -72,12 +72,12 @@
         android:layout_height="62dp"
         android:foregroundGravity="center_horizontal"
         android:text="Add a Memory"
-        android:textSize="40sp"
         android:textColor="@color/black"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@+id/descriptionEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.114" />
+        app:layout_constraintVertical_bias="0.056" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@
     <string name="worst">1. The WORST</string>
     <string name="title">Select a Memory Rating</string>
 
-    <string-array name = "spinnerList">
+    <string-array name="spinnerList">
         <item>@string/title</item>
         <item>@string/best</item>
         <item>@string/great</item>
